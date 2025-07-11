@@ -1562,7 +1562,7 @@ AP_GPS_UBLOX::_parse_gps(void)
         state.have_vertical_velocity = true;
         state.vel_n = _buffer.pvt.velN; //mm
         state.vel_e = _buffer.pvt.velE; //mm
-        state.vel_e = _buffer.pvt.velD; //mm
+        state.vel_d = _buffer.pvt.velD; //mm
         state.have_speed_accuracy = true;
         state.speed_accuracy = _buffer.pvt.s_acc; //mm/s
         _new_speed = true;
